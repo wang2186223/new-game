@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>像素肉鸽自走棋防御</title>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        canvas {
+            image-rendering: pixelated; /* 保持像素风格 */
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        #game-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+<div id="game-container"></div>
+
+<script src="js/state/GameState.js"></script>
+<script src="js/entities/Tower.js"></script>
+<script src="js/entities/Enemy.js"></script>
+<script src="js/scenes/BootScene.js"></script>
+<script src="js/scenes/BattleScene.js"></script>
+<script src="js/scenes/UIScene.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
